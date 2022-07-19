@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<title>85:45 - Dashboard</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/main%20logo%203.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-rtl.css">
+
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Feathericon CSS -->
+	<link rel="stylesheet" href="assets/css/feathericon.min.css">
+
+	<!-- Datatables CSS -->
+	<link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Main Wrapper -->
+	<div class="main-wrapper">
+
+		<!-- Header -->
+		<div class="header">
+
+			<!-- Logo -->
+			<div class="header-right">
+				<a href="index.html" class="logo">
+					<img src="assets/img/main%20logo5.png" alt="Logo">
+				</a>
+				<a href="index.html" class="logo logo-small">
+					<img src="assets/img/main%20logo%203.png" alt="Logo" width="30" height="30">
+				</a>
+			</div>
+			<!-- /Logo -->
+
+			<a href="javascript:void(0);" id="toggle_btn">
+				<i class="fe fe-text-align-right"></i>
+			</a>
+
+			<div class="top-nav-search">
+				<form>
+					<input type="text" class="form-control" placeholder="ابحث هنا">
+					<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+
+			<!-- Mobile Menu Toggle -->
+			<a class="mobile_btn" id="mobile_btn">
+				<i class="fa fa-bars"></i>
+			</a>
+			<!-- /Mobile Menu Toggle -->
+
+			<!-- Header Right Menu -->
+			<ul class="nav user-menu">
+
+				<!-- Notifications -->
+				<li class="nav-item dropdown noti-dropdown">
+					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+						<i class="fe fe-bell"></i> <span class="badge badge-pill">+2</span>
+					</a>
+					<div class="dropdown-menu notifications">
+						<div class="topnav-dropdown-header">
+							<span class="notification-title">الإشعارات الواردة</span>
+							<a href="javascript:void(0)" class="clear-noti"> مسح الكل </a>
+						</div>
+						<div class="noti-content">
+							<ul class="notification-list">
+								<li class="notification-message">
+									<a href="#">
+										<div class="media">
+											<span class="avatar avatar-sm">
+												<img class="avatar-img rounded-circle" alt="User Image"
+													src="assets/img/profiles/user.png">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">عميل 1</span> حجز <span
+														class="noti-title">ملعب 5 لساعتين</span></p>
+												<p class="noti-time"><span class="notification-time">منذ 1 دقيقة</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="notification-message">
+									<a href="#">
+										<div class="media">
+											<span class="avatar avatar-sm">
+												<img class="avatar-img rounded-circle" alt="User Image"
+													src="assets/img/profiles/user.png">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">عميل 1</span> حجز <span
+														class="noti-title">ملعب 5 لساعتين</span></p>
+												<p class="noti-time"><span class="notification-time">منذ 4 دقائق</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="notification-message">
+									<a href="#">
+										<div class="media">
+											<span class="avatar avatar-sm">
+												<img class="avatar-img rounded-circle" alt="User Image"
+													src="assets/img/profiles/user.png">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">عميل 1</span> حجز <span
+														class="noti-title">ملعب 5 لساعتين</span></p>
+												<p class="noti-time"><span class="notification-time">منذ 15 دقيقة</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="notification-message">
+									<a href="#">
+										<div class="media">
+											<span class="avatar avatar-sm">
+												<img class="avatar-img rounded-circle" alt="User Image"
+													src="assets/img/profiles/user.png">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">عميل 2</span> حجز <span
+														class="noti-title">ملعب 4 لساعة</span></p>
+												<p class="noti-time"><span class="notification-time">منذ 30 دقيقة</span>
+												</p>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="topnav-dropdown-footer">
+							<a href="#">عرض جميع الإشعارات</a>
+						</div>
+					</div>
+				</li>
+				<!-- /Notifications -->
+
+				<!-- User Menu -->
+				<li class="nav-item dropdown has-arrow">
+					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+						<span class="user-img"><img class="rounded-circle" src="assets/img/profiles/user.png" width="31"
+								alt="user"></span>
+					</a>
+					<div class="dropdown-menu">
+						<div class="user-header">
+							<div class="avatar avatar-sm">
+								<img src="assets/img/profiles/user.png" alt="User Image"
+									class="avatar-img rounded-circle">
+							</div>
+							<div class="user-text">
+								<h6>مستخدم</h6>
+								<p class="text-muted mb-0">مسئول</p>
+							</div>
+						</div>
+						<a class="dropdown-item" href="profile.html">ملفي الشخصي</a>
+						<a class="dropdown-item" href="lock-screen.html">قفل الشاشة</a>
+						<a class="dropdown-item" href="login.html">تسجيل خروج</a>
+					</div>
+				</li>
+				<!-- /User Menu -->
+
+			</ul>
+			<!-- /Header Right Menu -->
+
+		</div>
+		<!-- /Header -->
+
+		<!-- Sidebar -->
+		<div class="sidebar" id="sidebar">
+			<div class="sidebar-inner slimscroll">
+				<div id="sidebar-menu" class="sidebar-menu">
+					<ul>
+						<li class="menu-title">
+							<span>الرئيسية</span>
+						</li>
+						<li>
+							<a href="index.html"><i class="fe fe-home"></i> <span>لوحة التحكم</span></a>
+						</li>
+						<li>
+							<a href="appointment-list.html"><i class="fe fe-layout"></i> <span>المواعيد
+									المحجوزة</span></a>
+						</li>
+						<li>
+							<a href="pitches-list.html"><i class="fa fa-futbol-o"></i> <span>الملاعب</span></a>
+						</li>
+						<li>
+							<a href="clients-list.html"><i class="fe fe-users"></i> <span>العملاء</span></a>
+						</li>
+						<li>
+							<a href="reviews.html"><i class="fe fe-star-o"></i> <span>المراجعات</span></a>
+						</li>
+						<li class="active">
+							<a href="transactions-list.html"><i class="fe fe-activity"></i> <span>المعاملات</span></a>
+						</li>
+						<li class="menu-title">
+							<span>الصفحات</span>
+						</li>
+						<li class="nav-item">
+							<a href="calendar/calendar.html" target="_blank"><i class="fe fe-calendar"></i>
+								<span>التقويم</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fa fa-envelope"></i><span> صندوق البريد </span> <span
+									class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="mail/mailbox.html" target="_blank"><span class="fa fa-inbox"></span> صندوق
+										الوارد </a></li>
+								<li><a href="mail/read-mail.html" target="_blank"><span
+											class="fe fe-document"></span>إقرأ رسالة </a></li>
+								<li><a href="mail/compose.html" target="_blank"><span class="fa fa-send"></span> إرسال
+										رسالة </a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="profile.html"><i class="fe fe-user-plus"></i> <span>الملف الشخصي</span></a>
+						</li>
+						<li class="submenu">
+							<a href="#"><i class="fe fe-lock"></i> <span> المصادقة </span> <span
+									class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="login.html"> تسجيل دخول </a></li>
+								<li><a href="register.html"> إنشاء حساب </a></li>
+								<li><a href="forgot-password.html"> نسيت كلمة السر </a></li>
+								<li><a href="lock-screen.html"> قفل الشاشة </a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Sidebar -->
+
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+			<div class="content container-fluid">
+
+				<!-- Page Header -->
+				<div class="page-header">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="page-title">المعاملات</h3>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html">لوحة التحكم</a></li>
+								<li class="breadcrumb-item active">المعاملات</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="datatable table table-hover table-center mb-0">
+										<thead>
+											<tr>
+												<th>رقم الفاتورة</th>
+												<th>كود العميل</th>
+												<th>اسم العميل</th>
+												<th>المبلغ الإجمالي</th>
+												<th>الحالة</th>
+												<th>إجراء</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><a href="invoice.html">#IN0001</td>
+												<td>#CL001</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 1 </a>
+													</h2>
+												</td>
+												<td>EGP100.00</td>
+												<td>
+													<span class="badge badge-pill bg-success inv-badge">مدفوع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0002</td>
+												<td>#CL002</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 2</a>
+													</h2>
+												</td>
+												<td>EGP200.00</td>
+												<td>
+													<span class="badge badge-pill bg-danger inv-badge">غبر مدفوع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0003</td>
+												<td>#CL003</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 3</a>
+													</h2>
+												</td>
+												<td>EGP250.00</td>
+												<td>
+													<span class="badge badge-pill bg-warning-light inv-badge">قيد
+														الدفع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0004</td>
+												<td>#CL004</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 4</a>
+													</h2>
+												</td>
+												<td>EGP150.00</td>
+												<td>
+													<span class="badge badge-pill bg-success inv-badge">مدفوع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0005</td>
+												<td>#CL005</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 5</a>
+													</h2>
+												</td>
+												<td>EGP350.00</td>
+												<td>
+													<span class="badge badge-pill bg-danger inv-badge">غير مدفوع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0006</td>
+												<td>#CL006</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 6</a>
+													</h2>
+												</td>
+												<td>EGP300.00</td>
+												<td>
+													<span class="badge badge-pill bg-warning-light inv-badge">قيد
+														الدفع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0007</td>
+												<td>#CL007</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 7</a>
+													</h2>
+												</td>
+												<td>EGP250.00</td>
+												<td>
+													<span class="badge badge-pill bg-success inv-badge">مدفوع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0008</td>
+												<td>#CL008</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 8</a>
+													</h2>
+												</td>
+												<td>EGP150.00</td>
+												<td>
+													<span class="badge badge-pill bg-danger inv-badge">Paid</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0009</td>
+												<td>#CL009</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 9</a>
+													</h2>
+												</td>
+												<td>EGP100.00</td>
+												<td>
+													<span class="badge badge-pill bg-warning-light inv-badge">قيد
+														الدفع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><a href="invoice.html">#IN0010</td>
+												<td>#CL010</td>
+												<td>
+													<h2 class="table-avatar">
+														<a href="profile.html" class="avatar avatar-sm mr-2"><img
+																class="avatar-img rounded-circle"
+																src="assets/img/profiles/user.png" alt="User Image"></a>
+														<a href="profile.html">عميل 10 </a>
+													</h2>
+												</td>
+												<td>EGP120.00</td>
+												<td>
+													<span class="badge badge-pill bg-success inv-badge">مدفوع</span>
+												</td>
+												<td>
+													<div class="actions">
+														<a data-toggle="modal" href="#edit_invoice_report"
+															class="btn btn-sm bg-success-light mr-2">
+															<i class="fe fe-pencil"></i> تعديل
+														</a>
+														<a class="btn btn-sm bg-danger-light" data-toggle="modal"
+															href="#delete_modal">
+															<i class="fe fe-trash"></i> حذف
+														</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Page Wrapper -->
+		<!-- Edit Details Modal -->
+		<div class="modal fade" id="edit_invoice_report" aria-hidden="true" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">تعديل تقرير الفاتورة</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="row form-row">
+								<div class="col-12 col-sm-6">
+									<div class="form-group">
+										<label>رقم الفاتورة</label>
+										<input type="text" class="form-control" value="#">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-group">
+										<label>كود العميل</label>
+										<input type="text" class="form-control" value="	#">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-group">
+										<label>اسم العميل</label>
+										<input type="text" class="form-control" value="#">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-group">
+										<label>صورة العميل</label>
+										<input type="file" class="form-control">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-group">
+										<label>المبلغ الإجمالي</label>
+										<input type="text" class="form-control" value="#">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">حفظ التغييرات</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Edit Details Modal -->
+
+		<!-- Delete Modal -->
+		<div class="modal fade" id="delete_modal" aria-hidden="true" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<!--	<div class="modal-header">
+							<h5 class="modal-title">Delete</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>-->
+					<div class="modal-body">
+						<div class="form-content p-2">
+							<h4 class="modal-title">حذف</h4>
+							<p class="mb-4">هل أنت متأكد من أنك تريد الحذف؟</p>
+							<button type="button" class="btn btn-primary">حفظ</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal">إغلاق</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Delete Modal -->
+
+	</div>
+	<!-- /Main Wrapper -->
+
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+	<!-- Datatables JS -->
+	<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatables/datatables.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
